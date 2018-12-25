@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="MySpringMVC:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/MySpringMVC_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="MySpringMVC/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="MySpringMVC" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Spring MVC-4.3.18.RELEASE" />
+          <element id="library" level="project" name="Spring-4.3.18.RELEASE" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/mysql-connector-java-5.1.47.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/mybatis-3.4.6.jar" />
+          <element id="library" level="module" name="JUnit4" module-name="MySpringMVC" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/mybatis-spring-1.3.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/commons-dbcp2-2.5.0.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/commons-pool2-2.6.0.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
