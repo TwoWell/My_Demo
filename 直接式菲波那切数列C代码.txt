@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+void main()
+{
+    int n = 1, n1 = 1, n2 = 1;
+
+    for (int i = 1; i <= 40; i++)
+    {
+        if (i <= 2)  //当n=1和n = 2时，菲波那切数列前两项都为1；知道第三项开始使用下列else：当前项为其前两项之和
+        {
+            printf("%d\n", n);
+        }
+        else
+        {
+            n = n1 + n2;
+            printf("%d\n",n);
+            
+            int Temp;
+            Temp = n1;
+            n1 = n2;
+            n2 = n;
+        }
+    }
+}

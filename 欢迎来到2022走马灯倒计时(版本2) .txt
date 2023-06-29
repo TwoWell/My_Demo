@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <windows.h>
+
+int main()
+{
+    char char1[20] = "welcome to 2022!!!!!";
+    char char2[20] = "####################";
+
+    int left = 0;
+    int right = strlen(char1) - 1;
+
+    while (left <= right)
+    {
+        char2[left] = char1[left];
+        char2[right] = char1[right];
+        printf("%s\n", char2);
+        Sleep(1000);
+        system("cls");
+        left++;
+        right--;
+    }
+
+    return 0;
+}
